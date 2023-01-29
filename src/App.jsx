@@ -40,7 +40,7 @@ function App() {
           const celsius = (res.data.main.temp -273.15).toFixed(2)
           const fahrenheit = (celsius *(9/5)+32).toFixed(2)
           const newTempes = {celsius,fahrenheit }
-             setTemps(newTempes)   },3000)
+             setTemps(newTempes)   },1000)
       })
        .catch(err=> console.log(err))
          } 

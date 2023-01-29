@@ -6,5 +6,8 @@
     min-height: 100vh;
     font-family: sans-serif;
     padding: 20px;
-    background-color: cadetblue;
+    background-image: url(assets/components/img/a.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }

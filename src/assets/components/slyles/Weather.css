@@ -1,9 +1,11 @@
 .weathercard{
-    border:1px solid black;
+    border:1px solid rgba(61, 122, 228, .4);
     padding: 20px;
     border-radius: 20px;
     text-align: center;
-   background-color: black;
+    background-color: rgba(61, 122, 228, .4);
+    
+   
    color: aliceblue
    ;
 
@@ -34,8 +36,9 @@
 
 
 .weather_description{
-    color: goldenrod;
+    color: rgba(251, 251, 251, 0.777);
     font-size: 20px;
+    font-weight: 800;
     margin: 15px 0;
 }
 .weather_list span{
@@ -48,8 +51,8 @@
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 10px;
-    color: white;
-    background-color:coral;
+    color: rgba(234, 233, 233, 0.846);
+    background-color:rgba(80, 138, 255, 0.5);
     cursor: pointer;
     transition: transform 300ms ease;
    

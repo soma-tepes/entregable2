@@ -1,8 +1,42 @@
 import React from 'react'
 import "./slyles/Weather.css"
+import a from './img/1.jpg'
+import b from './img/2.jpg'
+import c from './img/3.jpg'
+import d from './img/4.webp'
+import e from './img/5.jpg'
+import f from './img/6.jpg'
+import g from './img/7.jpg'
+import h from './img/8.jpg'
+import i from './img/3.jpg'
+
+
+
 const Wheater = ({weather,temps,isCelsius,change}) => {
+
+  const backgrounds = {
+Clear: a, // Despejado
+Clouds: b, // Nublado
+Rain: c ,// Lluvia
+Thunderstorm: d, // Tormenta eléctrica
+Snow: e, // Nieve
+Mist:  f,// Niebla
+Smoke: g ,// Humo
+Haze: h,// Neblina
+Dust: i ,// Polvo
+Sand:a, // Arena
+Ash: a,// Ceniza
+Squall: a, // Ráfaga de viento
+Tornado: a, // Tornado
+Drizzle:a , // Llovizna
+    
+  }
+
+  const backgroundImage = backgrounds[weather?.weather[0].main] || backgrounds.Clear;
+
+
   return (
-    <section className='weathercard'>
+    <section className='weathercard' style={{ backgroundImage: `url(${backgroundImage})` , backgroundSize: 'cover'}}>
 
          <h1 className='weather_title'>Weather App</h1>
 
